@@ -43,6 +43,69 @@ public class FirstTest {
 
 
 
+
+    @Test
+
+    public void testCancelSearch()
+    {
+
+
+        waitForElementAndClick(By.id("org.wikipedia:id/search_container"),
+                "Cannot find search Wikipedia input",
+                5
+        );
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/page_list_item_container"),
+                "Cannot find search Wikipedia input",
+                5
+
+
+        );
+
+
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot find search input",
+                5
+
+        );
+
+
+        waitForElementAndClick(By.id("org.wikipedia:id/search_close_btn"),
+                "Cannot find X to cancel search",
+                5
+        );
+
+
+
+        waitForElementNotPresent(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "X is still present on the page",
+                5
+
+        );
+
+    }
+
+
+
+
+
+
+
+
+/*
+
     @Test
 
     public void testSearchTitle()
@@ -81,7 +144,7 @@ public class FirstTest {
 
 
 
-/*
+
 
     @Test
 
