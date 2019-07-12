@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="189">
+              <caret line="89" column="2" selection-start-line="89" selection-start-column="2" selection-end-line="89" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,6 +31,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>elements</find>
+      <find>assertElementNotPresent</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -41,7 +42,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="606" />
+    <option name="x" value="750" />
     <option name="y" value="23" />
     <option name="width" value="1036" />
     <option name="height" value="975" />
@@ -87,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveFirstArticleMyList">
+  <component name="RunManager" selected="JUnit.FirstTest.testAssertTitle">
     <configuration name="FirstTest.saveFirstArticleMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="newJavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -108,11 +109,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testAssertTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="newJavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAmountOfNotEmptySearch" />
+      <option name="METHOD_NAME" value="testAssertTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.testAssertTitle" />
         <item itemvalue="JUnit.FirstTest.saveFirstArticleMyList" />
         <item itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
         <item itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
         <item itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
-        <item itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
       </list>
     </recent_temporary>
   </component>
@@ -162,12 +163,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.07.12 at 11h 59m 56s.xml">
-      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.07.12 at 12h 00m 37s.xml">
-      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testCheckSearchArticleInBackground - 2019.07.12 at 12h 10m 09s.xml">
       <configuration name="FirstTest.testCheckSearchArticleInBackground" configurationId="JUnit" />
     </history-entry>
@@ -192,9 +187,15 @@
     <history-entry file="FirstTest_saveFirstArticleMyList - 2019.07.12 at 18h 32m 05s.xml">
       <configuration name="FirstTest.saveFirstArticleMyList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest_testAssertTitle - 2019.07.12 at 19h 14m 01s.xml">
+      <configuration name="FirstTest.testAssertTitle" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testAssertTitle - 2019.07.12 at 19h 15m 08s.xml">
+      <configuration name="FirstTest.testAssertTitle" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="606" y="23" width="1036" height="975" extended-state="0" />
+    <frame x="750" y="23" width="1036" height="975" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27414128" />
@@ -228,8 +229,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="189">
+          <caret line="89" column="2" selection-start-line="89" selection-start-column="2" selection-end-line="89" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

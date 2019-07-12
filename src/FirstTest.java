@@ -49,6 +49,61 @@ public class FirstTest {
 
 
 
+    @Test
+    public void testAssertTitle()
+    {
+
+
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find search Wikipedia input",
+                5
+
+
+        );
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "Cannot find search Wikipedia input",
+                10
+
+
+        );
+
+
+
+        String title_element = "org.wikipedia:id/view_page_title_text";
+
+
+
+     /*   waitForElementPresent(
+                By.id(title_element ),
+
+                "Cannot find search article title",
+                15);
+*/
+
+
+        assertElementPresent(
+                By.id(title_element),
+                "We did not find results for " + title_element
+
+        );
+
+
+
+
+    }
+
+
+  /*
+
 
     @Test
     public void saveTwoArticleMyList()
@@ -246,22 +301,6 @@ public class FirstTest {
         );
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
 
 
     @Test
@@ -1021,6 +1060,20 @@ String article_title = title_element.getAttribute("text");
         return element.getAttribute(attribute);
     }
 
+
+
+    private void assertElementPresent(By by, String error_message) {
+
+        int amount_of_elements = getAmountElements(by);
+        if (amount_of_elements <= 0) {
+            String default_message = "An element'" + by.toString() + "' missing";
+            throw new AssertionError(default_message + "" + error_message);
+
+
+        }
+
+
+    }
 }
 
 
