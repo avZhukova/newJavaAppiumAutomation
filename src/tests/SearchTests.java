@@ -2,6 +2,7 @@ package tests;
 
 import lib.CoreTestCase;
 import lib.UI.SearchPageObject;
+import lib.UI.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
 public class SearchTests extends CoreTestCase {
@@ -28,7 +29,7 @@ public class SearchTests extends CoreTestCase {
 
 
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject =  SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         int amount_of_search_results = SearchPageObject.getAmountOfFoundArticles();
@@ -57,7 +58,7 @@ public class SearchTests extends CoreTestCase {
     public void testSearch()
     {
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject =  SearchPageObjectFactory.get(driver);
         SearchPageObject.initSearchInput();
         SearchPageObject.typeSearchLine("Java");
         SearchPageObject.waitForSearchResult("Object-oriented programming language");
@@ -72,7 +73,7 @@ public class SearchTests extends CoreTestCase {
     public void testCancelSearch()
     {
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject =  SearchPageObjectFactory.get(driver);
 
 
 
@@ -89,7 +90,7 @@ public class SearchTests extends CoreTestCase {
 
     public void testAmountOfNotEmptySearch()
     {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject =  SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String search_line = "Linkin park discography";
@@ -110,7 +111,7 @@ public class SearchTests extends CoreTestCase {
     public void testAmountOfEmptySearch()
     {
 
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+        SearchPageObject SearchPageObject =  SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
         String search_line = "fghjhffj";
